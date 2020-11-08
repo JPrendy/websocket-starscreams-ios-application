@@ -1,0 +1,5 @@
+node_modules
+
+#Environment variables should be stored in `.env` locally, see an example how it could work https://github.com/laravel/laravel/blob/master/.env.example
+# in `.env` file I would have APP_NAME=Test, then for example in a `Fastfile` I would have ENV["APP_NAME"]. Makes it easier to not transfer sensitive data.
+.env
