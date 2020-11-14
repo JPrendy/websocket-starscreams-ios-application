@@ -61,3 +61,8 @@ How to manage releases in a repository [link](https://help.github.com/en/github/
 
 The following link provides helpful information
 - [link](https://github.com/JPrendy/template-repository).
+
+https://github.com/daltoniam/Starscream
+
+https://www.raywenderlich.com/861-websockets-on-ios-with-starscream
+

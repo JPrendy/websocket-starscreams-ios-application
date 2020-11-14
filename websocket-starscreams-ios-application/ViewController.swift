@@ -35,6 +35,7 @@ class ViewController: UIViewController {
         case .disconnected(let reason, let code):
             print("websocket is disconnected: \(reason) with code: \(code)")
         case .text(let string):
+            // this is the data we receive from other users sending data to specific port we use for websockets
             print("Received text: \(string)")
             websocketData.text = string
         case .binary(let data):
