@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9E9AEBC25600C2900C606E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E9AEBB25600C2900C606E5 /* AppDelegate.swift */; };
+		E9E9AEBE25600C2900C606E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E9AEBD25600C2900C606E5 /* SceneDelegate.swift */; };
+		E9E9AEC025600C2900C606E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E9AEBF25600C2900C606E5 /* ViewController.swift */; };
+		E9E9AEC325600C2900C606E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E9AEC125600C2900C606E5 /* Main.storyboard */; };
+		E9E9AEC525600C2B00C606E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E9AEC425600C2B00C606E5 /* Assets.xcassets */; };
+		E9E9AEC825600C2B00C606E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E9AEC625600C2B00C606E5 /* LaunchScreen.storyboard */; };
+		E9E9AED325600C2B00C606E5 /* websocket_starscreams_ios_applicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E9AED225600C2B00C606E5 /* websocket_starscreams_ios_applicationTests.swift */; };
+		E9E9AEDE25600C2B00C606E5 /* websocket_starscreams_ios_applicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E9AEDD25600C2B00C606E5 /* websocket_starscreams_ios_applicationUITests.swift */; };
+		E9E9AEF025600C9900C606E5 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = E9E9AEEF25600C9900C606E5 /* Starscream */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9E9AECF25600C2B00C606E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9E9AEB025600C2900C606E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9E9AEB725600C2900C606E5;
+			remoteInfo = "websocket-starscreams-ios-application";
+		};
+		E9E9AEDA25600C2B00C606E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9E9AEB025600C2900C606E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9E9AEB725600C2900C606E5;
+			remoteInfo = "websocket-starscreams-ios-application";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E9E9AEB825600C2900C606E5 /* websocket-starscreams-ios-application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "websocket-starscreams-ios-application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E9AEBB25600C2900C606E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E9E9AEBD25600C2900C606E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E9E9AEBF25600C2900C606E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E9E9AEC225600C2900C606E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9E9AEC425600C2B00C606E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9E9AEC725600C2B00C606E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9E9AEC925600C2B00C606E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9E9AECE25600C2B00C606E5 /* websocket-starscreams-ios-applicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "websocket-starscreams-ios-applicationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E9AED225600C2B00C606E5 /* websocket_starscreams_ios_applicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = websocket_starscreams_ios_applicationTests.swift; sourceTree = "<group>"; };
+		E9E9AED425600C2B00C606E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9E9AED925600C2B00C606E5 /* websocket-starscreams-ios-applicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "websocket-starscreams-ios-applicationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E9AEDD25600C2B00C606E5 /* websocket_starscreams_ios_applicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = websocket_starscreams_ios_applicationUITests.swift; sourceTree = "<group>"; };
+		E9E9AEDF25600C2B00C606E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9E9AEB525600C2900C606E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E9AEF025600C9900C606E5 /* Starscream in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E9AECB25600C2B00C606E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E9AED625600C2B00C606E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9E9AEAF25600C2900C606E5 = {
+			isa = PBXGroup;
+			children = (
+				E9E9AEBA25600C2900C606E5 /* websocket-starscreams-ios-application */,
+				E9E9AED125600C2B00C606E5 /* websocket-starscreams-ios-applicationTests */,
+				E9E9AEDC25600C2B00C606E5 /* websocket-starscreams-ios-applicationUITests */,
+				E9E9AEB925600C2900C606E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9E9AEB925600C2900C606E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9E9AEB825600C2900C606E5 /* websocket-starscreams-ios-application.app */,
+				E9E9AECE25600C2B00C606E5 /* websocket-starscreams-ios-applicationTests.xctest */,
+				E9E9AED925600C2B00C606E5 /* websocket-starscreams-ios-applicationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9E9AEBA25600C2900C606E5 /* websocket-starscreams-ios-application */ = {
+			isa = PBXGroup;
+			children = (
+				E9E9AEBB25600C2900C606E5 /* AppDelegate.swift */,
+				E9E9AEBD25600C2900C606E5 /* SceneDelegate.swift */,
+				E9E9AEBF25600C2900C606E5 /* ViewController.swift */,
+				E9E9AEC125600C2900C606E5 /* Main.storyboard */,
+				E9E9AEC425600C2B00C606E5 /* Assets.xcassets */,
+				E9E9AEC625600C2B00C606E5 /* LaunchScreen.storyboard */,
+				E9E9AEC925600C2B00C606E5 /* Info.plist */,
+			);
+			path = "websocket-starscreams-ios-application";
+			sourceTree = "<group>";
+		};
+		E9E9AED125600C2B00C606E5 /* websocket-starscreams-ios-applicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9E9AED225600C2B00C606E5 /* websocket_starscreams_ios_applicationTests.swift */,
+				E9E9AED425600C2B00C606E5 /* Info.plist */,
+			);
+			path = "websocket-starscreams-ios-applicationTests";
+			sourceTree = "<group>";
+		};
+		E9E9AEDC25600C2B00C606E5 /* websocket-starscreams-ios-applicationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E9E9AEDD25600C2B00C606E5 /* websocket_starscreams_ios_applicationUITests.swift */,
+				E9E9AEDF25600C2B00C606E5 /* Info.plist */,
+			);
+			path = "websocket-starscreams-ios-applicationUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9E9AEB725600C2900C606E5 /* websocket-starscreams-ios-application */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9E9AEE225600C2B00C606E5 /* Build configuration list for PBXNativeTarget "websocket-starscreams-ios-application" */;
+			buildPhases = (
+				E9E9AEB425600C2900C606E5 /* Sources */,
+				E9E9AEB525600C2900C606E5 /* Frameworks */,
+				E9E9AEB625600C2900C606E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "websocket-starscreams-ios-application";
+			packageProductDependencies = (
+				E9E9AEEF25600C9900C606E5 /* Starscream */,
+			);
+			productName = "websocket-starscreams-ios-application";
+			productReference = E9E9AEB825600C2900C606E5 /* websocket-starscreams-ios-application.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9E9AECD25600C2B00C606E5 /* websocket-starscreams-ios-applicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9E9AEE525600C2B00C606E5 /* Build configuration list for PBXNativeTarget "websocket-starscreams-ios-applicationTests" */;
+			buildPhases = (
+				E9E9AECA25600C2B00C606E5 /* Sources */,
+				E9E9AECB25600C2B00C606E5 /* Frameworks */,
+				E9E9AECC25600C2B00C606E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9E9AED025600C2B00C606E5 /* PBXTargetDependency */,
+			);
+			name = "websocket-starscreams-ios-applicationTests";
+			productName = "websocket-starscreams-ios-applicationTests";
+			productReference = E9E9AECE25600C2B00C606E5 /* websocket-starscreams-ios-applicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E9E9AED825600C2B00C606E5 /* websocket-starscreams-ios-applicationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9E9AEE825600C2B00C606E5 /* Build configuration list for PBXNativeTarget "websocket-starscreams-ios-applicationUITests" */;
+			buildPhases = (
+				E9E9AED525600C2B00C606E5 /* Sources */,
+				E9E9AED625600C2B00C606E5 /* Frameworks */,
+				E9E9AED725600C2B00C606E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9E9AEDB25600C2B00C606E5 /* PBXTargetDependency */,
+			);
+			name = "websocket-starscreams-ios-applicationUITests";
+			productName = "websocket-starscreams-ios-applicationUITests";
+			productReference = E9E9AED925600C2B00C606E5 /* websocket-starscreams-ios-applicationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9E9AEB025600C2900C606E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					E9E9AEB725600C2900C606E5 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					E9E9AECD25600C2B00C606E5 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = E9E9AEB725600C2900C606E5;
+					};
+					E9E9AED825600C2B00C606E5 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = E9E9AEB725600C2900C606E5;
+					};
+				};
+			};
+			buildConfigurationList = E9E9AEB325600C2900C606E5 /* Build configuration list for PBXProject "websocket-starscreams-ios-application" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9E9AEAF25600C2900C606E5;
+			packageReferences = (
+				E9E9AEEE25600C9900C606E5 /* XCRemoteSwiftPackageReference "Starscream" */,
+			);
+			productRefGroup = E9E9AEB925600C2900C606E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9E9AEB725600C2900C606E5 /* websocket-starscreams-ios-application */,
+				E9E9AECD25600C2B00C606E5 /* websocket-starscreams-ios-applicationTests */,
+				E9E9AED825600C2B00C606E5 /* websocket-starscreams-ios-applicationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9E9AEB625600C2900C606E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E9AEC825600C2B00C606E5 /* LaunchScreen.storyboard in Resources */,
+				E9E9AEC525600C2B00C606E5 /* Assets.xcassets in Resources */,
+				E9E9AEC325600C2900C606E5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E9AECC25600C2B00C606E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E9AED725600C2B00C606E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9E9AEB425600C2900C606E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E9AEC025600C2900C606E5 /* ViewController.swift in Sources */,
+				E9E9AEBC25600C2900C606E5 /* AppDelegate.swift in Sources */,
+				E9E9AEBE25600C2900C606E5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E9AECA25600C2B00C606E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E9AED325600C2B00C606E5 /* websocket_starscreams_ios_applicationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E9AED525600C2B00C606E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E9AEDE25600C2B00C606E5 /* websocket_starscreams_ios_applicationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9E9AED025600C2B00C606E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9E9AEB725600C2900C606E5 /* websocket-starscreams-ios-application */;
+			targetProxy = E9E9AECF25600C2B00C606E5 /* PBXContainerItemProxy */;
+		};
+		E9E9AEDB25600C2B00C606E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9E9AEB725600C2900C606E5 /* websocket-starscreams-ios-application */;
+			targetProxy = E9E9AEDA25600C2B00C606E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E9E9AEC125600C2900C606E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9E9AEC225600C2900C606E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E9E9AEC625600C2B00C606E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9E9AEC725600C2B00C606E5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9E9AEE025600C2B00C606E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E9E9AEE125600C2B00C606E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9E9AEE325600C2B00C606E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "websocket-starscreams-ios-application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.websocket-starscreams-ios-application";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9E9AEE425600C2B00C606E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "websocket-starscreams-ios-application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.websocket-starscreams-ios-application";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E9E9AEE625600C2B00C606E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "websocket-starscreams-ios-applicationTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.websocket-starscreams-ios-applicationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/websocket-starscreams-ios-application.app/websocket-starscreams-ios-application";
+			};
+			name = Debug;
+		};
+		E9E9AEE725600C2B00C606E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "websocket-starscreams-ios-applicationTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.websocket-starscreams-ios-applicationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/websocket-starscreams-ios-application.app/websocket-starscreams-ios-application";
+			};
+			name = Release;
+		};
+		E9E9AEE925600C2B00C606E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "websocket-starscreams-ios-applicationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.websocket-starscreams-ios-applicationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "websocket-starscreams-ios-application";
+			};
+			name = Debug;
+		};
+		E9E9AEEA25600C2B00C606E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "websocket-starscreams-ios-applicationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.websocket-starscreams-ios-applicationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "websocket-starscreams-ios-application";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9E9AEB325600C2900C606E5 /* Build configuration list for PBXProject "websocket-starscreams-ios-application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E9AEE025600C2B00C606E5 /* Debug */,
+				E9E9AEE125600C2B00C606E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9E9AEE225600C2B00C606E5 /* Build configuration list for PBXNativeTarget "websocket-starscreams-ios-application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E9AEE325600C2B00C606E5 /* Debug */,
+				E9E9AEE425600C2B00C606E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9E9AEE525600C2B00C606E5 /* Build configuration list for PBXNativeTarget "websocket-starscreams-ios-applicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E9AEE625600C2B00C606E5 /* Debug */,
+				E9E9AEE725600C2B00C606E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9E9AEE825600C2B00C606E5 /* Build configuration list for PBXNativeTarget "websocket-starscreams-ios-applicationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E9AEE925600C2B00C606E5 /* Debug */,
+				E9E9AEEA25600C2B00C606E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E9E9AEEE25600C9900C606E5 /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E9E9AEEF25600C9900C606E5 /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9E9AEEE25600C9900C606E5 /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E9E9AEB025600C2900C606E5 /* Project object */;
+}
