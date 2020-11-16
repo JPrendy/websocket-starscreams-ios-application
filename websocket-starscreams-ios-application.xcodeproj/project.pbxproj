@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E91289992563254800110990 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = E91289982563254800110990 /* Swifter */; };
 		E9E9AEBC25600C2900C606E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E9AEBB25600C2900C606E5 /* AppDelegate.swift */; };
 		E9E9AEBE25600C2900C606E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E9AEBD25600C2900C606E5 /* SceneDelegate.swift */; };
 		E9E9AEC025600C2900C606E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E9AEBF25600C2900C606E5 /* ViewController.swift */; };
@@ -72,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E91289992563254800110990 /* Swifter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +187,9 @@
 				E9E9AEDB25600C2B00C606E5 /* PBXTargetDependency */,
 			);
 			name = "websocket-starscreams-ios-applicationUITests";
+			packageProductDependencies = (
+				E91289982563254800110990 /* Swifter */,
+			);
 			productName = "websocket-starscreams-ios-applicationUITests";
 			productReference = E9E9AED925600C2B00C606E5 /* websocket-starscreams-ios-applicationUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -222,6 +227,7 @@
 			mainGroup = E9E9AEAF25600C2900C606E5;
 			packageReferences = (
 				E9E9AEEE25600C9900C606E5 /* XCRemoteSwiftPackageReference "Starscream" */,
+				E91289972563254800110990 /* XCRemoteSwiftPackageReference "swifter" */,
 			);
 			productRefGroup = E9E9AEB925600C2900C606E5 /* Products */;
 			projectDirPath = "";
@@ -597,6 +603,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E91289972563254800110990 /* XCRemoteSwiftPackageReference "swifter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/httpswift/swifter";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
 		E9E9AEEE25600C9900C606E5 /* XCRemoteSwiftPackageReference "Starscream" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/daltoniam/Starscream";
@@ -608,6 +622,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E91289982563254800110990 /* Swifter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E91289972563254800110990 /* XCRemoteSwiftPackageReference "swifter" */;
+			productName = Swifter;
+		};
 		E9E9AEEF25600C9900C606E5 /* Starscream */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E9E9AEEE25600C9900C606E5 /* XCRemoteSwiftPackageReference "Starscream" */;

@@ -10,10 +10,14 @@ import Starscream
 
 class ViewController: UIViewController {
     
-    var request = URLRequest(url: URL(string: "ws://localhost:8082")!)
     private var socket: WebSocket?
-
+    
     override func viewDidLoad() {
+        var request = URLRequest(url: URL(string: "ws://localhost:8082")!)
+        if ProcessInfo.processInfo.arguments.contains("TESTING") {
+          request = URLRequest(url: URL(string: "http://localhost:8080")!)
+        }
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         request.timeoutInterval = 5
@@ -21,7 +25,7 @@ class ViewController: UIViewController {
         socket?.delegate = self
         socket?.connect()
     }
-
+    
     @IBOutlet weak var websocketData: UILabel!
     
     @IBAction func sendData(_ sender: Any) {
@@ -57,31 +61,31 @@ class ViewController: UIViewController {
 }
 
 extension ViewController : WebSocketDelegate {
-  public func websocketDidConnect(_ socket: Starscream.WebSocket) {
-
-  }
-  
-  public func websocketDidDisconnect(_ socket: Starscream.WebSocket, error: NSError?) {
-
-  }
-  
-  public func websocketDidReceiveMessage(_ socket: Starscream.WebSocket, text: String) {
-    guard let data = text.data(using: .utf16),
-      let jsonData = try? JSONSerialization.jsonObject(with: data),
-      let jsonDict = jsonData as? [String: Any],
-      let messageType = jsonDict["type"] as? String else {
-        return
+    public func websocketDidConnect(_ socket: Starscream.WebSocket) {
+        
     }
-
-    // 2
-    if messageType == "message",
-      let messageData = jsonDict["data"] as? [String: Any],
-      let messageText = messageData["text"] as? String {
-
-        websocketData.text = messageText
+    
+    public func websocketDidDisconnect(_ socket: Starscream.WebSocket, error: NSError?) {
+        
     }
-  }
-  
-  public func websocketDidReceiveData(_ socket: Starscream.WebSocket, data: Data) {
+    
+    public func websocketDidReceiveMessage(_ socket: Starscream.WebSocket, text: String) {
+        guard let data = text.data(using: .utf16),
+              let jsonData = try? JSONSerialization.jsonObject(with: data),
+              let jsonDict = jsonData as? [String: Any],
+              let messageType = jsonDict["type"] as? String else {
+            return
+        }
+        
+        // 2
+        if messageType == "message",
+           let messageData = jsonDict["data"] as? [String: Any],
+           let messageText = messageData["text"] as? String {
+            
+            websocketData.text = messageText
+        }
+    }
+    
+    public func websocketDidReceiveData(_ socket: Starscream.WebSocket, data: Data) {
     }
 }
