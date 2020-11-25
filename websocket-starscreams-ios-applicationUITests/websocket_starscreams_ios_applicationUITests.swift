@@ -17,7 +17,11 @@ class websocket_starscreams_ios_applicationUITests: XCTestCase {
         continueAfterFailure = false
         let server = HttpServer()
         server["/"] = websocket(text: { session, text in
-          session.writeText("Sent data via mocked Websocket")
+            if text.contains("Hi Server!") {
+                session.writeText("Sent data via mocked Websocket")
+            } else {
+                session.writeText("Could not find the text we were looking for")
+            }
         }, binary: { session, binary in
           session.writeBinary(binary)
         })
