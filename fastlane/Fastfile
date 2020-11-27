@@ -18,6 +18,6 @@ default_platform(:ios)
   platform :ios do
     desc "Runs iOS tests"
     lane :tests do
-      run_tests(scheme: "websocket_starscreams_ios_application", devices: "iPhone 12")
+      run_tests(scheme: "websocket_starscreams_ios_application", devices: "iPhone 11")
     end
   end
