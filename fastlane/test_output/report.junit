@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='websocket-starscreams-ios-applicationUITests.xctest' tests='1' failures='0'>
+  <testsuite name='websocket_starscreams_ios_applicationUITests.websocket_starscreams_ios_applicationUITests' tests='1' failures='0'>
+    <testcase classname='websocket_starscreams_ios_applicationUITests.websocket_starscreams_ios_applicationUITests' name='testSendingMockedWebsocketData' time='4.484'/>
+  </testsuite>
+</testsuites>
