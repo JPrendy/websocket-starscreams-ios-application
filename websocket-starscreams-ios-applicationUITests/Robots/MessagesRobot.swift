@@ -13,11 +13,13 @@ public final class MessagesRobot {
     @discardableResult
     public func tapWebsocketButton() -> Self {
         app.buttons["Send Data"].tap()
+        sleep(3)
         return self
     }
     
     public func tapWebsocketButton2() -> Self {
         app.buttons["Send Data 2"].tap()
+        sleep(3)
         return self
     }
     
