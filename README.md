@@ -1,8 +1,11 @@
-# template-repository
+# Websocket starscreams ios application
 
 ## Description
 
-The existing repository is a template, I can generate new repositories with the same directory structure, branches, and files.
+An application that connects to a server websocket application, which we can send and receive data over Websockets using Starscream.
+
+#### Corresponding project
+https://github.com/JPrendy/websocket-client-server-javascript-application
 
 ## Contents
 
@@ -15,16 +18,20 @@ The existing repository is a template, I can generate new repositories with the 
 
 ## Setup Steps
 
+To set up fastlane, type the following in the terminal and follow the steps
+
 ```
-Code here
+fastlane init
 ```
 
 <p><img src="images/exampleImage.png" width="300"/></p>
 
 ## How to run the project locally
 
+To run the tests locally, run the following.
+
 ```
-Code here
+bundle exec fastlane tests
 ```
 
 ## Tools
@@ -59,11 +66,10 @@ How to manage releases in a repository [link](https://help.github.com/en/github/
 
 ## Helpful resources
 
-The following link provides helpful information
-- [link](https://github.com/JPrendy/template-repository).
+The following link brings you to the `Starscream` repo which we use for Websocket connections on iOS.
+- [link](https://github.com/daltoniam/Starscream).
 
-https://github.com/daltoniam/Starscream
-
-https://www.raywenderlich.com/861-websockets-on-ios-with-starscream
+The following link is a good tutorial on how use Websockets on iOS with Starscream 
+- [link](https://www.raywenderlich.com/861-websockets-on-ios-with-starscream).
 
 app.start will not work for multiple websocket tests you need to use app.restart()
