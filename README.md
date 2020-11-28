@@ -6,6 +6,7 @@ An application that connects to a server websocket application, which we can sen
 
 #### Corresponding project
 https://github.com/JPrendy/websocket-client-server-javascript-application
+We need the following project to be started locally to see it working live, the tests will still work, if the corresponding project is not started locally. 
 
 ## Contents
 
@@ -42,7 +43,7 @@ override func viewDidLoad() {
 }
 ```
 
-In the `ViewController.swift`, the below code is important to get Websockets send and receiving data working. when we press the `sendData` button in our app we are calling `socket?.write(string: "Hi Server!")` which calls the function `didReceive` and will call the specific case `.text` and in this case whenever we `socket?.write` or another application that uses the same Websocket port of `ws://localhost:8082` uses the equivalent of `socket?.write` it updates the text of the app with `websocketData.text = string`, so we can easily see all the websocket data that is being sent and received. We can also see the data being sent and received in the logs.
+In the `ViewController.swift`, the below code is **important** to get Websockets sending and receiving data working correctly. when we press the `sendData` button in our app we are calling `socket?.write(string: "Hi Server!")` which calls the function `didReceive` and will call the specific case `.text` and in this case whenever we `socket?.write` or another application that uses the same Websocket port of `ws://localhost:8082` uses the equivalent of `socket?.write` it updates the text of the app with `websocketData.text = string`, so we can easily see all the websocket data that is being sent and received. We can also see the data being sent and received in the logs.
 
 ```swift
 @IBAction func sendData(_ sender: Any) {
@@ -129,7 +130,7 @@ server["/"] = websocket(text: { session, text in
     }
 ```
 
-An important thing to note when using websockets with our tests we need to use `app.restart` for every test or any tests after the first one will fail, so we need something like the following for every test in `websocket_starscreams_ios_applicationUITests`.
+An **important thing to note** when using websockets with our tests we need to use `app.restart()` for every test or any tests after the first one will fail, so we need something like the following for every test in `websocket_starscreams_ios_applicationUITests`.
 
 ```swift
 func testSendingMockedWebsocketData() {
