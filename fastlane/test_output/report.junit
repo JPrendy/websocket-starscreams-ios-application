@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testsuites name='websocket-starscreams-ios-applicationUITests.xctest' tests='3' failures='0'>
   <testsuite name='websocket_starscreams_ios_applicationTests.websocket_starscreams_ios_applicationTests' tests='2' failures='0'>
-    <testcase classname='websocket_starscreams_ios_applicationTests.websocket_starscreams_ios_applicationTests' name='testExample' time='0.007'/>
-    <testcase classname='websocket_starscreams_ios_applicationTests.websocket_starscreams_ios_applicationTests' name='testPerformanceExample' time='0.309'/>
+    <testcase classname='websocket_starscreams_ios_applicationTests.websocket_starscreams_ios_applicationTests' name='testExample' time='0.002'/>
+    <testcase classname='websocket_starscreams_ios_applicationTests.websocket_starscreams_ios_applicationTests' name='testPerformanceExample' time='0.319'/>
   </testsuite>
   <testsuite name='websocket_starscreams_ios_applicationUITests.websocket_starscreams_ios_applicationUITests' tests='1' failures='0'>
-    <testcase classname='websocket_starscreams_ios_applicationUITests.websocket_starscreams_ios_applicationUITests' name='testSendingMockedWebsocketData' time='2.972'/>
+    <testcase classname='websocket_starscreams_ios_applicationUITests.websocket_starscreams_ios_applicationUITests' name='testSendingMockedWebsocketData' time='3.112'/>
   </testsuite>
 </testsuites>

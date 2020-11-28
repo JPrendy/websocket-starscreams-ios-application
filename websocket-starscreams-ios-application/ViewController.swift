@@ -32,6 +32,10 @@ class ViewController: UIViewController {
         socket?.write(string: "Hi Server!")
     }
     
+    @IBAction func sendData2(_ sender: Any) {
+        socket?.write(string: "2nd Send Websocket data")
+    }
+    
     func didReceive(event: WebSocketEvent, client: WebSocket) {
         switch event {
         case .connected(let headers):

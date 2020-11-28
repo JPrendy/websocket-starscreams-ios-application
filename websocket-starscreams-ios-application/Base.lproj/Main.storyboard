@@ -24,8 +24,16 @@
                                     <action selector="sendData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7la-VW-WKT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aW5-cZ-fq1">
+                                <rect key="frame" x="165" y="515" width="84" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Send Data 2"/>
+                                <connections>
+                                    <action selector="sendData2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b6U-o1-6Rf"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Websocket Data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGT-rh-6mh">
-                                <rect key="frame" x="94" y="267" width="227" height="21"/>
+                                <rect key="frame" x="32" y="268" width="351" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
