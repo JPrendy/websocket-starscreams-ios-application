@@ -13,40 +13,44 @@ let app = XCUIApplication()
 class websocket_starscreams_ios_applicationUITests: XCTestCase {
     
     let server = HttpServer()
-
-    override func setUpWithError() throws {
+    let MessagingRobot = MessagesRobot()
+    
+    override func setUp() {
         continueAfterFailure = false
+        try! server.start()
         server["/"] = websocket(text: { session, text in
             if text.contains("Hi Server!") {
                 session.writeText("Sent data via mocked Websocket")
             }
-            if text.contains("2nd Send Websocket data") {
+            else if text.contains("2nd Send Websocket data") {
                 session.writeText("Sent data two via mocked Websocket")
             }
             else {
                 session.writeText("Could not find the text we were looking for")
             }
         }, binary: { session, binary in
-          session.writeBinary(binary)
+            session.writeBinary(binary)
         })
-        try server.start()
         app.launchArguments += ["TESTING"]
     }
-
-    override func tearDownWithError() throws {
+    
+    override func tearDown() {
         server.stop()
         super.tearDown()
     }
-
-    func testSendingMockedWebsocketData() throws {
-        app.launch()
-        XCUIApplication().staticTexts["Send Data"].tap()
-        XCUIApplication().staticTexts["Send Data"].tap()
+    
+    func testSendingMockedWebsocketData() {
+        app.restart()
+        MessagingRobot
+            .tapWebsocketButton()
+            .assertSentWebsocketText(text: "Sent data via mocked Websocket")
     }
     
-    func testSendingMockedWebsocketDataExampleTwo() throws {
-        app.launch()
-        XCUIApplication().staticTexts["Send Data 2"].tap()
-        XCUIApplication().staticTexts["Send Data 2"].tap()
+    func testSendingMockedWebsocketDataExampleTwo() {
+        app.restart()
+        MessagingRobot
+            .tapWebsocketButton2()
+            .assertSentWebsocketText(text: "Sent data two via mocked Websocket")
     }
 }
+

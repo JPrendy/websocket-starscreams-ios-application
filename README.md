@@ -66,3 +66,4 @@ https://github.com/daltoniam/Starscream
 
 https://www.raywenderlich.com/861-websockets-on-ios-with-starscream
 
+app.start will not work for multiple websocket tests you need to use app.restart()

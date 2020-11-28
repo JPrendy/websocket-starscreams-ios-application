@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E91289992563254800110990 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = E91289982563254800110990 /* Swifter */; };
+		E9DE69842572B1AF00F32AA3 /* XCUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DE69832572B1AF00F32AA3 /* XCUITest.swift */; };
+		E9DE69932572B66B00F32AA3 /* MessagesRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DE69922572B66B00F32AA3 /* MessagesRobot.swift */; };
 		E9E9AEBC25600C2900C606E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E9AEBB25600C2900C606E5 /* AppDelegate.swift */; };
 		E9E9AEBE25600C2900C606E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E9AEBD25600C2900C606E5 /* SceneDelegate.swift */; };
 		E9E9AEC025600C2900C606E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E9AEBF25600C2900C606E5 /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E9DE69832572B1AF00F32AA3 /* XCUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUITest.swift; sourceTree = "<group>"; };
+		E9DE69922572B66B00F32AA3 /* MessagesRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesRobot.swift; sourceTree = "<group>"; };
 		E9E9AEB825600C2900C606E5 /* websocket-starscreams-ios-application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "websocket-starscreams-ios-application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E9AEBB25600C2900C606E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9E9AEBD25600C2900C606E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +84,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E9DE69822572B19900F32AA3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E9DE69832572B1AF00F32AA3 /* XCUITest.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E9DE698B2572B61C00F32AA3 /* Robots */ = {
+			isa = PBXGroup;
+			children = (
+				E9DE69922572B66B00F32AA3 /* MessagesRobot.swift */,
+			);
+			path = Robots;
+			sourceTree = "<group>";
+		};
 		E9E9AEAF25600C2900C606E5 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +146,8 @@
 		E9E9AEDC25600C2B00C606E5 /* websocket-starscreams-ios-applicationUITests */ = {
 			isa = PBXGroup;
 			children = (
+				E9DE698B2572B61C00F32AA3 /* Robots */,
+				E9DE69822572B19900F32AA3 /* Extensions */,
 				E9E9AEDD25600C2B00C606E5 /* websocket_starscreams_ios_applicationUITests.swift */,
 				E9E9AEDF25600C2B00C606E5 /* Info.plist */,
 			);
@@ -290,7 +312,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9DE69842572B1AF00F32AA3 /* XCUITest.swift in Sources */,
 				E9E9AEDE25600C2B00C606E5 /* websocket_starscreams_ios_applicationUITests.swift in Sources */,
+				E9DE69932572B66B00F32AA3 /* MessagesRobot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
