@@ -22,8 +22,7 @@ jobs:
       run: bundle install    
 
     - name: Run tests
-      run: ls -s
-      # run: bundle exec fastlane tests
+      run: bundle exec fastlane tests
 
     # Artifacts allow you to persist data like test results after a job has completed, see https://docs.github.com/en/actions/configuring-and-managing-workflows/persisting-workflow-data-using-artifacts for how the artifacts works
     - name: Upload Fastlane Test results
