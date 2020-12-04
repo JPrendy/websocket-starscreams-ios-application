@@ -23,8 +23,7 @@ jobs:
 
     - name: Run tests
       run: |
-        sudo mkdir -p /Library/Developer/CoreSimulator/Profiles/Runtimes
-        sudo ln -s /Applications/Xcode_11.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS\ 13.2.simruntime
+        xcversion simulators --install="13.2" --no-progress
         xcrun simctl list runtimes
         xcrun simctl list devices
         bundle exec fastlane tests
@@ -35,3 +34,6 @@ jobs:
       with:
         name: Fastlane Test Results
         path: fastlane/test_output
+
+        # sudo mkdir -p /Library/Developer/CoreSimulator/Profiles/Runtimes
+        # sudo ln -s /Applications/Xcode_11.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS\ 13.2.simruntime
