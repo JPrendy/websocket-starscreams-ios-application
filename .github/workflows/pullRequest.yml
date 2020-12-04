@@ -23,7 +23,7 @@ jobs:
 
     - name: Run tests
       run: |
-        xcversion simulators --install="13.2" --no-progress
+        xcversion simulators --install="13.2"
         xcrun simctl list runtimes
         xcrun simctl list devices
         bundle exec fastlane tests
