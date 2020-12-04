@@ -22,13 +22,7 @@ jobs:
       run: bundle install    
 
     - name: Run tests
-      run: |
-        sudo mkdir -p /Library/Developer/CoreSimulator/Profiles/Runtimes
-        sudo ln -s /Applications/Xcode_10.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS\ 12.4.simruntime
-
-        xcrun simctl list runtimes
-        xcrun simctl list devices
-        bundle exec fastlane tests
+      run: bundle exec fastlane tests
 
     # Artifacts allow you to persist data like test results after a job has completed, see https://docs.github.com/en/actions/configuring-and-managing-workflows/persisting-workflow-data-using-artifacts for how the artifacts works
     - name: Upload Fastlane Test results
@@ -36,5 +30,3 @@ jobs:
       with:
         name: Fastlane Test Results
         path: fastlane/test_output
-
-                sudo ln -s /Applications/Xcode_11.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime /Library/Developer/CoreSimulator/Profiles/Runtimes/iOS\ 13.2.simruntime

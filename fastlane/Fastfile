@@ -15,11 +15,11 @@
 
 default_platform(:ios)
 
-  # xcversion(version: "~> 12.2.0")
+  xcversion(version: "~> 12.2.0")
 
   platform :ios do
     desc "Runs iOS tests"
     lane :tests do
-      run_tests(scheme: "websocket-starscreams-ios-application", devices: "iPhone SE (12.4)")
+      run_tests(scheme: "websocket-starscreams-ios-application", devices: "iPhone 11 (14.2)")
     end
   end
