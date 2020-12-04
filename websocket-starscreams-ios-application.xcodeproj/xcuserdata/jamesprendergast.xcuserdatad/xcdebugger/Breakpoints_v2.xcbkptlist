@@ -82,6 +82,54 @@
             endingLineNumber = "21"
             landmarkName = "setUp()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B3315640-0284-4EB9-BCDD-1B4E02E76449 - 9875f1ae085d4b6c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "websocket_starscreams_ios_applicationUITests.websocket_starscreams_ios_applicationUITests.setUp() -&gt; ()"
+                  moduleName = "websocket-starscreams-ios-applicationUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jamesprendergast/Documents/Github%20Projects/websocket-starscreams-ios-application/websocket-starscreams-ios-applicationUITests/websocket_starscreams_ios_applicationUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "331">
+               </Location>
+               <Location
+                  uuid = "B3315640-0284-4EB9-BCDD-1B4E02E76449 - 117538dba20d6ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swifter.WebSocketSession, Swift.String) -&gt; () in websocket_starscreams_ios_applicationUITests.websocket_starscreams_ios_applicationUITests.setUp() -&gt; ()"
+                  moduleName = "websocket-starscreams-ios-applicationUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jamesprendergast/Documents/Github%20Projects/websocket-starscreams-ios-application/websocket-starscreams-ios-applicationUITests/websocket_starscreams_ios_applicationUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2E13DD6F-8F6A-4E1F-A8EB-86B3ED53CF44"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "websocket-starscreams-ios-applicationUITests/websocket_starscreams_ios_applicationUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "testSendingMockedWebsocketDataExampleTwo()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
