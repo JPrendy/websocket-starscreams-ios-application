@@ -25,7 +25,7 @@ jobs:
 
     - name: check label
       if: ${{ github.event.label.name == 'bug' }}
-      run: echo ${{ github.event}}
+      run: echo ${{ github.event.label.name}}
     
     - name: check label 2
       if: ${{ github.event.label.name != 'bug' }}
