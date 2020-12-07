@@ -23,11 +23,11 @@ jobs:
 
     - name: check label
       if: ${{ !contains(github.event.pull_request.labels.*.name, 'bug') }}
-      run: echo $OK
+      run: echo ENV['OK']
     
     - name: check label 2
       if: ${{ contains(github.event.pull_request.labels.*.name, 'bug') }}
-      run: echo $OK
+      run: echo ENV['OK']
 
 
     - name: Install Dependencies
