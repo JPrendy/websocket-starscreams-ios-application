@@ -26,11 +26,11 @@ jobs:
 
     - name: check label
       if: ${{ github.event.label.name == 'bug' }}
-      run: echo ${{ github.event.label.name}}
+      run: echo "test  ${{ github.event.label.name}}"
     
     - name: check label 2
       if: ${{ github.event.label.name != 'bug' }}
-      run: echo ${{ github.event }}
+      run: echo "test  ${{ github.event.label.name}}"
 
 
     - name: Install Dependencies
