@@ -18,6 +18,14 @@ jobs:
     steps:
     - uses: actions/checkout@v2.3.4
 
+    - name: check label
+      if: ${{ github.event.label.name == 'bug' }}
+      run: echo == bug   
+    
+    - name: check label 2
+      if: ${{ github.event.label.name != 'bug' }}
+      run: echo != bug    
+
     - name: Install Dependencies
       if: ${{ github.event.label.name == 'bug' }}
       run: bundle install    
