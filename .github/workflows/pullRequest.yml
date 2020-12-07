@@ -26,6 +26,7 @@ jobs:
       if: ${{ contains(github.event.pull_request.labels.*.name, 'bug') }}
       run: echo test2
 
+
     - name: Install Dependencies
       run: bundle install    
 
