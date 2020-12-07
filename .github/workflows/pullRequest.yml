@@ -26,11 +26,11 @@ jobs:
 
     - name: check label
       if: ENV['SELF_HOSTED'] == 'true'
-      run: echo ENV['SELF_HOSTED']
+      run: echo $SELF_HOSTED
     
     - name: check label 2
       if: ENV['SELF_HOSTED'] != 'true'
-      run: echo ENV['SELF_HOSTED']
+      run: echo $SELF_HOSTED
 
 
     - name: Install Dependencies
