@@ -27,7 +27,6 @@ jobs:
       run: echo != bug    
 
     - name: Install Dependencies
-      if: ${{ github.event.label.name == 'bug' }}
       run: bundle install    
 
     - name: Run tests
