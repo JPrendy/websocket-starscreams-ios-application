@@ -5,8 +5,7 @@ on:
     branches:
       - master
       - develop
-  pull_request:
-    types: labeled 
+  pull_request: 
     branches:
       - master
       - develop
