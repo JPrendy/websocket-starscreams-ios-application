@@ -10,6 +10,9 @@ on:
       - master
       - develop
 
+env:
+  OK: ${{github.event.label.name}}
+
 jobs:
   build:
 
@@ -20,11 +23,11 @@ jobs:
 
     - name: check label
       if: ${{ !contains(github.event.pull_request.labels.*.name, 'bug') }}
-      run: echo 
+      run: echo $OK
     
     - name: check label 2
       if: ${{ contains(github.event.pull_request.labels.*.name, 'bug') }}
-      run: echo test2
+      run: echo $OK
 
 
     - name: Install Dependencies
