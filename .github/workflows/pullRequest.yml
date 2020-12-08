@@ -29,7 +29,7 @@ jobs:
       run: echo $SELF_HOSTED
     
     - name: check label 2
-      if: ENV['SELF_HOSTED'] != 'true'
+      if: (github.event_name == 'pull_request' && (github.base_ref == 'master' || github.base_ref == 'develop') || ENV['SELF_HOSTED'] == 'true')
       run: echo $SELF_HOSTED
 
 
