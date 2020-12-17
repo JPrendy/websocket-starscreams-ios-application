@@ -24,7 +24,6 @@ default_platform(:ios)
         scheme: 'websocket-starscreams-ios-application',
         devices: 'iPhone 11 (14.2)',
         try_count: 3, # retry _failing_ tests up to three times^1.
-        fail_build: false,
         parallel_testrun_count: 1 # run subsets of your tests on parallel simulators^2
       )
       # run_tests(scheme: "websocket-starscreams-ios-application", devices: "iPhone 11 (14.2)")
