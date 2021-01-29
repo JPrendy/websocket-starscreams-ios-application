@@ -19,7 +19,6 @@ jobs:
         repo-token: "${{ secrets.FASTLANE_TOKEN }}"
 
     - uses: actions/github-script@v3
-      if: contains(github.event.comment.body, '👋 Thanks for reporting1!')
       with:
         github-token: ${{secrets.FASTLANE_TOKEN}}
         script: |
