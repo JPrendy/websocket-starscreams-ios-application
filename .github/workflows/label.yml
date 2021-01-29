@@ -17,10 +17,10 @@ jobs:
           github-token: ${{secrets.FASTLANE_TOKEN}}
           script: |
             var msg = `test`
-            
+
             var body = context.payload.pull_request.body
             if(body) {
-              var incompleteGuidelines = body.includes('[test]')
+              var incompleteGuidelines = body.includes('test')
             }
             if(!incompleteGuidelines) {
               github.issues.createComment({
