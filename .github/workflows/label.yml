@@ -19,7 +19,7 @@ jobs:
         repo-token: "${{ secrets.FASTLANE_TOKEN }}"
 
     - uses: actions/github-script@v3
-      if: contains(github.event.comment.body, '👋 Thanks for reporting!')
+      if: contains(github.event.comment.body, '👋 Thanks for reporting1!')
       with:
         github-token: ${{secrets.FASTLANE_TOKEN}}
         script: |
@@ -27,5 +27,5 @@ jobs:
             issue_number: context.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
-            body: '👋 Thanks for reporting!'
+            body: '👋 Thanks for reporting1!'
           })
