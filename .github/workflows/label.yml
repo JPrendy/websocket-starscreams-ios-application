@@ -42,9 +42,3 @@ jobs:
           # Get pull request description
           var body = context.payload.pull_request.body
 
-          # If `body` exists, check for conditions
-          # related to being from a contributor
-          if(body) {
-            var isContribution = body.contains('New Submission')
-            var incompleteGuidelines = body.contains('[]')
-          }
