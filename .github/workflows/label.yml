@@ -19,12 +19,12 @@ jobs:
         repo-token: "${{ secrets.FASTLANE_TOKEN }}"
 
     - uses: actions/github-script@v3
-        with:
-          github-token: ${{secrets.FASTLANE_TOKEN}}
-          script: |
-            github.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: '👋 Thanks for reporting!'
-            })
+      with:
+        github-token: ${{secrets.FASTLANE_TOKEN}}
+        script: |
+          github.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: '👋 Thanks for reporting!'
+          })
