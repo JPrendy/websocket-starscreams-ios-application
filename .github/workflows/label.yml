@@ -24,11 +24,12 @@ jobs:
             })
             // Find any comment already made by the bot.
             const botComment = comments.find(comment => comment.user.id)
+            const botComment2 = comments.find(comment => comment[0].user.id)
             console.log(botComment)
-            console.log(comments)
+            console.log(botComment)
 
             const commentBody = "test"
-            if (comments.body == commentBody) {
+            if (botComment.body == commentBody) {
               await github.issues.updateComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
