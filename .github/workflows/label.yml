@@ -24,7 +24,7 @@ jobs:
             })
             // Find any comment already made by the bot.
             const botComment = comments.find(comment => comment.user.id)
-            echo botComment
+           
             const commentBody = "test"
             if (botComment) {
               await github.issues.updateComment({
