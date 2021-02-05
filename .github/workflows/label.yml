@@ -26,7 +26,7 @@ jobs:
 
 
             const botComment = comments.find(comment => comment.user.id)
-            console.log(botComment[1].body)
+            console.log(botComment[1])
             
             const commentBody = "test"
             if (botComment) {
