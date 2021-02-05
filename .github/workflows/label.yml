@@ -28,7 +28,7 @@ jobs:
             console.log(comments)
 
             const commentBody = "test"
-            if (botComment.body == commentBody) {
+            if (comments.body == commentBody) {
               await github.issues.updateComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
