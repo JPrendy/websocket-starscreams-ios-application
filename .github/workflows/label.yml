@@ -12,9 +12,11 @@ jobs:
   comment:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+
       - uses: actions/github-script@v3
         with:
           github-token: ${{secrets.FASTLANE_TOKEN}}
           script: |
-              const path = require( 'path' );
-              await require( path.resolve( './simple.js' ) )( github, core, context );
+              const path = require('path')
+              return require(path.resolve('./simple.js'))({context})
