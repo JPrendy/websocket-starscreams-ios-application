@@ -5,7 +5,7 @@
 # file with configuration.  For more information, see:
 # https://github.com/actions/labeler
 
-name: Labeler
+name: Labeler2
 on: [pull_request]
 
 jobs:
@@ -27,7 +27,7 @@ jobs:
 
             const botComment = comments.find(comment => comment.user.id)
             // console.log(botComment[1])
-            console.log(comments)
+            console.log(comments[1])
             
             const commentBody = "test"
             if (botComment) {
