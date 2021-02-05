@@ -19,4 +19,4 @@ jobs:
           github-token: ${{secrets.FASTLANE_TOKEN}}
           script: |
               const path = require('path')
-              return require(path.resolve('./simple.js'))({context})
+              return await require(path.resolve('./simple.js'))({context})
