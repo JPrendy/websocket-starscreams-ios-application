@@ -23,8 +23,9 @@ jobs:
               issue_number: context.payload.number,
             })
             // Find any comment already made by the bot.
-            const botComment = comments.find(comment[0] => comment.user.id)
-            console.log(botComment)
+            const botComment = comments.find(comment => comment.user.id)
+            console.log(botComment.body)
+            console.log(botComment.body[0])
             console.log("---------")
             console.log(comments)
             
