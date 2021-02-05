@@ -16,5 +16,5 @@ jobs:
         with:
           github-token: ${{secrets.FASTLANE_TOKEN}}
           script: |
-            const script = require(`script.js`)
+            const script = require(`${process.env.GITHUB_WORKSPACE}/script.js`)
             console.log(script({github, context}))  
