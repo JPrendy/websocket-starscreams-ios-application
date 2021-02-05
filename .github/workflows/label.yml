@@ -24,9 +24,8 @@ jobs:
             })
             // Find any comment already made by the bot.
             const botComment = comments.find(comment => comment.user.id)
-            const botComment2 = comments[1].find(comment => comment.user.id)
             console.log(botComment)
-            console.log(botComment2)
+            console.log(comments)
 
             const commentBody = "test"
             if (botComment.body == commentBody) {
