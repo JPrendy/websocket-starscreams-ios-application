@@ -3,6 +3,6 @@ module.exports = ({github, context}) => {
         issue_number: context.issue.number,
         owner: context.repo.owner,
         repo: context.repo.repo,
-        labels: ['Triage']
+        labels: ['bug']
       })
   }
