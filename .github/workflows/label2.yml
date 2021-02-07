@@ -1,48 +1,12 @@
-# This workflow will triage pull requests and apply a label based on the
-# paths that are modified in the pull request.
-#
-# To use this workflow, you will need to set up a .github/labeler.yml
-# file with configuration.  For more information, see:
-# https://github.com/actions/labeler
-
-name: Labeler2
-on: [pull_request]
+on: push
 
 jobs:
-  comment:
+  echo-input:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - uses: actions/github-script@v3
         with:
-          github-token: ${{secrets.FASTLANE_TOKEN}}
           script: |
-            // Get the existing comments.
-            const {data: comments} = await github.issues.listComments({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.payload.number,
-            })
-            // Find any comment already made by the bot.
-
-
-            const botComment = comments.find(comment => comment.user.id)
-            // console.log(botComment[1])
-            console.log(comments[1].body)
-            
-            const commentBody = "test"
-            if (botComment) {
-              await github.issues.updateComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                comment_id: botComment.id,
-                body: commentBody
-              })
-            } else {
-              await github.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: context.payload.number,
-                body: commentBody
-              })
-            }
-
+            const script = require(`${process.env.GITHUB_WORKSPACE}/script.js`)
+            console.log(script({github, context}))

@@ -30,7 +30,7 @@ jobs:
             console.log(comments[0])
             
             const commentBody = "test"
-            if (botComment) {
+            if (comments[0].body || comments[1].body) {
               await github.issues.updateComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
