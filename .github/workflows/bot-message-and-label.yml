@@ -1,0 +1,24 @@
+name: CI pull request
+
+on:
+  push: 
+    branches:
+      - master
+      - develop
+  pull_request:
+    branches:
+      - master
+      - develop
+
+jobs:
+  bot-message-and-label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/github-script@v3
+        with:
+          github-token: ${{secrets.SCRIPT_TOKEN}}
+          script: |
+            const script = require(`${process.env.GITHUB_WORKSPACE}/.github/workflows/script.js`)
+            await script.botMessage({github, context})
+            script.botLabel({github, context})
