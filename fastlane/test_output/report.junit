@@ -1,11 +1,11 @@
-<?xml version='1.0' encoding='UTF-8'?> 
-<testsuites name='websocket-starscreams-ios-applicationTests.xctest, websocket-starscreams-ios-applicationUITests.xctest' tests='4' failures='0' retries='2'>
-  <testsuite name='websocket_starscreams_ios_applicationTests.websocket_starscreams_ios_applicationTests' tests='2' failures='0' package='websocket-starscreams-ios-applicationTests.xctest'>
-    <testcase classname='websocket_starscreams_ios_applicationTests.websocket_starscreams_ios_applicationTests' name='testExample' time='0.002'/>
-    <testcase classname='websocket_starscreams_ios_applicationTests.websocket_starscreams_ios_applicationTests' name='testPerformanceExample' time='0.349'/>
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='websocket-starscreams-ios-applicationUITests.xctest' tests='4' failures='0'>
+  <testsuite name='websocket_starscreams_ios_applicationTests.websocket_starscreams_ios_applicationTests' tests='2' failures='0'>
+    <testcase classname='websocket_starscreams_ios_applicationTests.websocket_starscreams_ios_applicationTests' name='testExample' time='0.007'/>
+    <testcase classname='websocket_starscreams_ios_applicationTests.websocket_starscreams_ios_applicationTests' name='testPerformanceExample' time='0.415'/>
   </testsuite>
-  <testsuite name='websocket_starscreams_ios_applicationUITests.websocket_starscreams_ios_applicationUITests' tests='2' failures='0' package='websocket-starscreams-ios-applicationUITests.xctest'>
-    <testcase classname='websocket_starscreams_ios_applicationUITests.websocket_starscreams_ios_applicationUITests' name='testSendingMockedWebsocketData' time='9.188'/>
-    <testcase classname='websocket_starscreams_ios_applicationUITests.websocket_starscreams_ios_applicationUITests' name='testSendingMockedWebsocketDataExampleTwo' time='9.537'/>
+  <testsuite name='websocket_starscreams_ios_applicationUITests.websocket_starscreams_ios_applicationUITests' tests='2' failures='0'>
+    <testcase classname='websocket_starscreams_ios_applicationUITests.websocket_starscreams_ios_applicationUITests' name='testSendingMockedWebsocketData' time='8.271'/>
+    <testcase classname='websocket_starscreams_ios_applicationUITests.websocket_starscreams_ios_applicationUITests' name='testSendingMockedWebsocketDataExampleTwo' time='8.887'/>
   </testsuite>
 </testsuites>

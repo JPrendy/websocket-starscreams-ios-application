@@ -21,13 +21,13 @@ public final class MessagesRobot {
         return self
     }
     
-    public func findMatch( for identifier: String, in query: XCUIElementQuery, waitTimeout timeout: TimeInterval = 2.0) -> Bool {
+    public func findMatch( for identifier: String, in query: XCUIElementQuery, waitTimeout timeout: TimeInterval = 0.0) -> Bool {
         query.matching(identifier: identifier).firstMatch.waitForExistence(timeout: timeout)
     }
     
     @discardableResult
     public func assertSentWebsocketText(text: String) -> Self {
-        sleep(5)
+        sleep(2)
         let actualApiText = app.staticTexts.matching(identifier: "webSocketTextLabel").firstMatch.text
         let identifier = "webSocketTextLabel"
         // Will need to change this depending on where the identifier is set `app.staticTexts`, aka to check a button we would have `app.buttons`
